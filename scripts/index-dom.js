@@ -3,6 +3,7 @@ import { digitalClock, alarm } from "./dom/reloj.js";
 import { shortcuts } from "./dom/teclado.js";
 import { moveBall } from "./dom/teclado.js";
 import countdown from "./dom/cuenta_regresiva.js";
+import scrollTopButton from "./dom/button_scroll.js";
 
 const d = document;
 
@@ -11,6 +12,7 @@ d.addEventListener("DOMContentLoaded", e => {
     digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
     alarm("assets/alarma.mp3", "#activar-alarma", "#desactivar-alarma");
     countdown("countdown", "Oct 17, 2026 16:21:50", "Feliz Cumpleaños Eden🤑");
+    scrollTopButton(".scroll-top-btn");
 });
 
 d.addEventListener("keydown", e => {

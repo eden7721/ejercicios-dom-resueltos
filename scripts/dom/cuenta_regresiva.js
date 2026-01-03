@@ -17,7 +17,6 @@ export default function countdown(id, limitDate, finalMessage) {
             clearInterval(countdownTempo);
             $countdown.innerHTML = `<h3>${finalMessage}</h3>`
         }
-        console.log(countdownDate, now, limitTime);
     }, 1000);
 
 }
