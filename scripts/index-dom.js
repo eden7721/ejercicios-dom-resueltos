@@ -10,6 +10,8 @@ import responsiveTester from "./dom/prueba_responsive.js";
 import userDeviceInfo from "./dom/deteccion_dispositivos.js";
 import networkStatus from "./dom/deteccion_red.js";
 import webCam from "./dom/deteccion_webcam.js";
+import getGeoLocation from "./dom/geolocalizacion.js";
+import searchFilters from "./dom/filtro_busquedas.js";
 
 const d = document;
 
@@ -24,6 +26,8 @@ d.addEventListener("DOMContentLoaded", e => {
     responsiveTester("responsive-tester");
     userDeviceInfo("user-device-info");
     webCam("webcam");
+    getGeoLocation("geolocation");
+    searchFilters(".card-filter", ".card");
 });
 
 d.addEventListener("keydown", e => {

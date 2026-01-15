@@ -12,7 +12,6 @@ export default function webCam(id) {
             audio: false,
         })
         .then(stream => {
-            console.log(stream);
             $video.srcObject = stream;
             $video.play();
         })
