@@ -13,6 +13,8 @@ import webCam from "./dom/deteccion_webcam.js";
 import getGeoLocation from "./dom/geolocalizacion.js";
 import searchFilters from "./dom/filtro_busquedas.js";
 import draw from "./dom/sorteo.js";
+import slider from "./dom/carrusel.js";
+import scrollSpy from "./dom/scroll_espia.js";
 
 const d = document;
 
@@ -30,6 +32,8 @@ d.addEventListener("DOMContentLoaded", e => {
     getGeoLocation("geolocation");
     searchFilters(".card-filter", ".card");
     draw("#winner-btn", ".player");
+    slider();
+    scrollSpy();
 });
 
 d.addEventListener("keydown", e => {
