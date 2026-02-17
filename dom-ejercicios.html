@@ -33,9 +33,9 @@
             <a href="#seccion10" data-scroll-spy>Filtros de Búsquedas</a>
             <a href="#seccion11" data-scroll-spy>Sorteo digital</a>
             <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
-            <a href="#seccion13" data-scroll-spy>Video Inteligente/a>
+            <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
             <a href="#seccion14" data-scroll-spy>Validaciones de Formularios</a>
-            <a href="#seccion15" data-scroll-spy>Sección 10</a>
+            <a href="#seccion15" data-scroll-spy>Narrador de Voz</a>
         </nav>
     </aside>
     <main>
@@ -172,7 +172,7 @@
         </section>
         <section id="seccion14" class="section" data-scroll-spy>
             <h2>Validaciones de Formularios</h2>
-            <form class="contact-form">
+            <form action="https://formsubmit.co/3b4a88f8dce56d0cbe2d16733cb9b610" method="POST" class="contact-form" target="_blank">
                 <legend>Envíanos tus comentarios</legend>
                 <input type="text" name="name" placeholder="Escribe tu nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                 <input type="email" name="email" placeholder="Escribe tu email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9\-]+(\.[a-z0-9\-]+)*(\.[a-z]{2,15})$" required>    
@@ -189,7 +189,14 @@
             </form>
         </section>
         <section id="seccion15" class="section" data-scroll-spy>
-            <h2>Sección 15</h2>
+            <h2>Narrador de Voz</h2>
+            <select id="speech-select">
+                <option value="">----Elige una Voz</option>
+            </select>
+            <br><br>
+            <textarea id="speech-text" cols="50" rows="5" placeholder="Ingresa texto para leerlo..."></textarea>
+            <br><br>
+            <button id="speech-btn">Leer texto</button>
         </section>
     </main>
 

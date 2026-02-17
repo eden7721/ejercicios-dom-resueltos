@@ -14,7 +14,7 @@ export default function smartVideo() {
 
             w.addEventListener("visibilitychange", e => {
                 d.visibilityState === "visible" ? 
-                e.target.play() : 
+                e.target.play() :
                 e.target.pause();
             });
         });
