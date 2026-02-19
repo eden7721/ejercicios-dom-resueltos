@@ -37,7 +37,7 @@
     xhr.send();
 })();
 
-//Fetch
+//Fetch con promesas
 (() => {
     const $fetch = document.getElementById("fetch"),
         $fragment = document.createDocumentFragment();
@@ -97,3 +97,5 @@
 
     getData()
 })();
+
+
